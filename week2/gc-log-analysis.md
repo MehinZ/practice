@@ -414,3 +414,7 @@ Mixed的转移暂停会同时回收部分老年代的Region，有别于FullGC
 此次FullGC耗时47ms，并发标记后GC不及对象晋升速度以及生成速度时，可能触发FullGC。当发生了FullGC，内存回收时间可能会退化使用SerialGC，GC性能严重降低。
 
 需要通过具体日志分析退化原因（如此次运行是内存不足导致，内存增加为`512M`则不再触发FullGC）
+
+G1各任务耗时占比图：
+
+![G1各任务耗时占比图](https://raw.githubusercontent.com/MehinZ/practice/master/week2/img/G1%E5%90%84%E4%B8%AA%E9%98%B6%E6%AE%B5%E5%8D%A0%E7%94%A8%E6%97%B6%E9%97%B4%E6%AF%94%E4%BE%8B.png)
